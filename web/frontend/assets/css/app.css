@@ -1,0 +1,22 @@
+.common-btn {
+    justify-content: center;
+    align-items: center;
+    all: unset;
+    position: relative;
+    box-sizing: border-box;
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 0.125px;
+    padding: 6px 12px;
+    background: linear-gradient(180deg, rgba(48, 48, 48, 0) 63.53%, rgba(255, 255, 255, 0.15) 100%), rgba(48, 48, 48, 1);
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0rem -0.0625rem 0rem 0.0625rem rgba(0, 0, 0, 0.8) inset, 0rem 0rem 0rem 0.0625rem rgba(48, 48, 48, 1) inset, 0rem 0.03125rem 0rem 0.09375rem rgba(255, 255, 255, 0.25) inset;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
