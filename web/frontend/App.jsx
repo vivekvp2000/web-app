@@ -19,7 +19,8 @@ export default function App() {
         <QueryProvider>
           <NavMenu>
             <Link to="/" rel="home" />
-            <Link to="identify">Identify Address Risk</Link>
+            <Link to="/identify">Identify Address Risk</Link>
+            <Link to="/confirm">Confirm your Details</Link>
           </NavMenu>
           <Routes pages={pages} />
         </QueryProvider>

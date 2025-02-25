@@ -13,35 +13,35 @@ import {
 } from "@shopify/polaris";
 import welcomeImage from '../assets/images/welcome.svg'
 import { useNavigate } from "react-router-dom";
+import { welcomePageConfig } from "../utils/config";
 
 export default function HomePage() {
   const navigate = useNavigate()
   return (
-    <Page fullWidth title="Sentry Address Risk and Validation" >
-      <section style={{ paddingBottom: "3rem" }}>
+    <Page fullWidth title={welcomePageConfig.pagetitle} >
+      <section className="section-bottom">
         <Card sectioned >
-          <div style={{ paddingTop: "70px" }}>
+          <div className="pt-70">
             <Grid>
               <Grid.Cell columnSpan={{ xs: 12, sm: 6, md: 6, lg: 6, xl: 6 }}>
-                <div style={{ paddingLeft: "64px" }}>
+                <div className="pl-64">
                   <Text variant="heading3xl" as="h2">
-                    Welcome
+                    {welcomePageConfig.title}
                   </Text>
-                  <p style={{ marginTop: '15px', color: "#303030" }}>Sentry by Swift enables you to identify address risks that can lead to <br /> delivery issues.</p>
-                  <p style={{ marginTop: '15px', color: "#303030" }}>Click on Continue to get started</p>
+                  <p className="mt-15 paragraph-clr">{welcomePageConfig.description}</p>
+                  <p className="mt-15 paragraph-clr">{welcomePageConfig.descriptionSecondary}</p>
                   <div style={{ marginBlock: '12px' }}>
-                    <button className="common-btn" onClick={() => navigate('identify')}>Continue</button>
+                    <button className="common-btn" onClick={() => navigate('identify')}>{welcomePageConfig.continueButtonLabel}</button>
                   </div>
                 </div>
               </Grid.Cell>
               <Grid.Cell columnSpan={{ xs: 12, sm: 6, md: 6, lg: 6, xl: 6 }}>
-                <div style={{
-                  width: "100%", display: "flex", justifyContent: "end", height: "544px", position: "relative",
-                }}>
+                <div className="relative right-img w-100 flex justify-end">
                   <img
                     src={welcomeImage}
                     alt="Dashboard preview"
-                    style={{ borderRadius: '8px', position: "absolute", bottom: "-60px" }}
+                    className="absolute"
+                    style={{ borderRadius: '8px', bottom: "-60px" }}
                   />
                 </div>
               </Grid.Cell>
