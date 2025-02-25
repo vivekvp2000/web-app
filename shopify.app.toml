@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "7b3da32083508063d7b9b7e3a1d039b9"
-application_url = "https://computation-boundary-thinks-beverly.trycloudflare.com"
+application_url = "https://prohibited-app-implications-speeches.trycloudflare.com"
 embedded = true
 name = "web-app"
 handle = "web-app-23"
@@ -20,9 +20,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://computation-boundary-thinks-beverly.trycloudflare.com/auth/callback",
-  "https://computation-boundary-thinks-beverly.trycloudflare.com/auth/shopify/callback",
-  "https://computation-boundary-thinks-beverly.trycloudflare.com/api/auth/callback"
+  "https://prohibited-app-implications-speeches.trycloudflare.com/auth/callback",
+  "https://prohibited-app-implications-speeches.trycloudflare.com/auth/shopify/callback",
+  "https://prohibited-app-implications-speeches.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]

@@ -1,4 +1,4 @@
-import { Card, Page, Text, Grid, TextField } from "@shopify/polaris";
+import { Card, Page, Layout, TextContainer, Text, Grid, TextField } from "@shopify/polaris";
 import identify from '../assets/images/risk.svg'
 import { useCallback, useState } from "react";
 import { welcomePageConfig } from "../utils/config";
